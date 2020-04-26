@@ -1,0 +1,49 @@
+.NoCenter {
+  justify-content: flex-start;
+}
+
+.Question {
+  display: flex;
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding: 0 3vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Button {
+  color: #32302e;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  background: #f4f5f7;
+  border: 1px solid #32302e;
+  border-radius: 4px;
+  width: 50vw;
+  padding: 1rem 0;
+}
+
+.Button:hover,
+.Button:active {
+  cursor: pointer;
+  color: #f4f5f7;
+  background: #32302e;
+}
+
+.Jokered {
+  visibility: hidden;
+}
+
+@media (max-width: 800px) {
+  .TopBar h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Button {
+    width: 80%;
+  }
+}

@@ -1,0 +1,48 @@
+.PageWrapper {
+  text-align: center;
+  padding: 20vh 5vw 0 5vw;
+  min-height: 100vh;
+  height: 100%;
+  color: #f0ede8;
+  background: linear-gradient(
+    #2d3a5a 0%,
+    #274b75 33%,
+    #415a7d 66%,
+    #4578b8 100%
+  );
+}
+
+.PageWrapper h1 {
+  margin-bottom: 4rem;
+}
+
+.Button {
+  color: #f0ede8;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: #2d3a5a;
+  border: 1px solid #2d3a5a;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  margin: 2rem auto 0 auto;
+  width: 40%;
+}
+
+.Button:hover,
+.Button:active {
+  cursor: pointer;
+  color: #2d3a5a;
+  background: #f0ede8;
+}
+
+@media (max-width: 1024px) {
+  .Button {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .Button {
+    width: 80%;
+  }
+}

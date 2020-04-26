@@ -1,0 +1,15 @@
+export const GET_QUESTIONS = "GET_QUESTIONS"; 
+export const GET_CATEGORIES = "GET_CATEGORIES" 
+export const GET_SESSION = "GET_SESSION"; // Not implemented
+export const RESET_SESSION = "RESET_SESSION"; // Not implemented
+export const PICK_CATEGORY = "PICK_CATEGORY"; 
+export const PICK_DIFFICULTY = "PICK_DIFFICULTY";
+export const ANSWERED = "ANSWERED";
+export const TICK = "TICK";
+export const QUIZ_FAILED = "QUIZ_FAILED";
+export const RESTART = "RESTART";
+export const GET_FAILED = "GET_FAILED";
+export const JOKER = "JOKER";
+export const QUIZ_LOADING = "QUIZ_LOADING";
+export const NEXT_QUESTION = "NEXT_QUESTION";
+export const QUIZ_COMPLETE = "QUIZ_COMPLETE";

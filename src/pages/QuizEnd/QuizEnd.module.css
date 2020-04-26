@@ -1,0 +1,71 @@
+.Grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.QuestionList {
+  margin-bottom: 2rem;
+  padding: 0 4rem;
+}
+
+.QuestionSummary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.QuestionSummary p {
+  max-width: 80%;
+  margin: 0;
+}
+
+.QuestionSummary h4,
+.QuestionSummary p {
+  display: inline-block;
+}
+
+.QuestionSummary img {
+  margin-left: 1rem;
+  width: 3vh;
+  height: 2.1vh;
+}
+
+.MarginLeft {
+  margin-left: 1rem;
+}
+
+.ScoreMark {
+  display: inline-block;
+  color: #fff;
+  border-radius: 50%;
+  background: #000;
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem 0.5rem;
+  transform: rotate(-15deg);
+}
+
+.ScoreMark h1 {
+  font-size: 3rem;
+}
+
+.Btn {
+  margin: 2rem auto 1rem auto;
+  width: 60%;
+}
+
+@media (max-width: 1024px) {
+  .Grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ScoreInfos {
+    margin-bottom: 2rem;
+  }
+
+  .QuestionList {
+    grid-row: 2;
+  }
+}

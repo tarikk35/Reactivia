@@ -1,0 +1,155 @@
+/* .PageWrapper {
+  text-align: center;
+  padding: 6vh 0;
+  min-height: 100vh;
+  height: 100%;
+  color: #f0ede8;
+  background: linear-gradient(
+    #2d3a5a 0%,
+    #274b75 33%,
+    #415a7d 66%,
+    #4578b8 100%
+  );
+} */
+
+/* .BackButton {
+  position: absolute;
+  top: 12vh;
+  left: 10vw;
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+.BackButton:active,
+.BackButton:hover {
+  cursor: pointer;
+  color: #000;
+  background: #f4f5f7;
+} */
+
+.Carousel {
+  width: 100%;
+  padding: 2rem 4rem;
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.Carousel ul {
+  bottom: -3.5rem;
+  text-align: center;
+}
+
+.Carousel ul li>button::before{
+  color: #fff;
+}
+
+.CarouselItem {
+  position: relative;
+  background: #2d3a5a;
+  margin-bottom: 4rem;
+  border-radius: 4px;
+  padding: 1rem 0;
+  max-width: 18vw;
+  height: 20vw;
+  margin: 0 auto 1% auto;
+}
+
+.CarouselItem img {
+  display: inline-block;
+  margin: 0 auto;
+  width: 14vw;
+  height: 14vw;
+}
+
+.CarouselItem p {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+.CarouselItem:active,
+.CarouselItem:hover,
+.SelectedItem {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background: #4578b8;
+}
+
+.Carousel button::before {
+  border-radius: 50%;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#hardnesswrapper.HardnessWrapper {
+  padding-bottom: 4rem;
+}
+
+#hardnesswrapper.HardnessWrapper > div {
+  margin: 0 1rem;
+}
+
+#hardnesswrapper.HardnessWrapper > div > label {
+  color: #f0ede8;
+  font-weight: 600;
+}
+/* 
+.Button {
+  color: #f0ede8;
+  font-size: 1.5rem;
+  margin-top: 6rem;
+  font-weight: 600;
+  background: #2d3a5a;
+  border: 1px solid #2d3a5a;
+  border-radius: 4px;
+  padding: 1.5vh 6vw;
+  margin-bottom: 4rem;
+} */
+/* 
+.Button:hover,
+.Button:active {
+  color: #2d3a5a;
+  background: #f0ede8;
+} */
+
+@media (max-width: 1024px) {
+  .CarouselItem {
+    max-width: 22vw;
+    height: 28vw;
+  }
+  .CarouselItem img {
+    width: 16vw;
+    height: 16vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .CarouselItem {
+    max-width: 30vw;
+    height: 37vw;
+  }
+  .CarouselItem img {
+    width: 22vw;
+    height: 22vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .Carousel {
+    margin-bottom: 6rem;
+  }
+  .CarouselItem {
+    max-width: 44vw;
+    height: 48vw;
+  }
+  .CarouselItem img {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .Carousel ul {
+    bottom: -7rem;
+  }
+}

@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import { Switch, Route } from "react-router-dom";
+import Landing from "./pages/Landing/Landing";
+import NotFound from "./pages/NotFound/NotFound";
+import Quiz from "./pages/Quiz/Quiz";
+import SelectCategory from "./pages/SelectCategory/SelectCategory";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
-function App() {
+const App = () => {
+  // If route is only like "localhost:3000", Landing page will show. Everything else will be in switch statement.
+  // This makes it easier to route to NotFound page.
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Route exact path="/" component={Landing} />
+      <Route
+        path={"/(.+)"}
+        render={() => {
+          return (
+            <Switch>
+              <Route exact path="/quiz/:id" component={Quiz} />
+              <Route exact path="/pick-category" component={SelectCategory} />
+              <Route exact path="/error" component={ErrorPage} />
+              <Route component={NotFound} />
+            </Switch>
+          );
+        }}
+      ></Route>
+    </Fragment>
   );
-}
+};
 
 export default App;

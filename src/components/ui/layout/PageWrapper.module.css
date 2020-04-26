@@ -1,0 +1,31 @@
+.FlexPageWrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  color: #f0ede8;
+  background: linear-gradient(
+    #2d3a5a 0%,
+    #274b75 33%,
+    #415a7d 66%,
+    #4578b8 100%
+  );
+}
+
+.PageWrapper {
+  text-align: center;
+  padding: 6vh 0;
+  min-height: 100vh;
+  height: 100%;
+  color: #f0ede8;
+  background: linear-gradient(
+    #2d3a5a 0%,
+    #274b75 33%,
+    #415a7d 66%,
+    #4578b8 100%
+  );
+}

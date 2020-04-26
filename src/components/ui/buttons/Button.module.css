@@ -1,0 +1,32 @@
+.Button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f0ede8;
+  background: #2d3a5a;
+  border: 1px solid #2d3a5a;
+  border-radius: 4px;
+  padding: 1.5vh 10vw;
+}
+
+.Button:hover,
+.Button:active {
+  cursor: pointer;
+  color: #2d3a5a;
+  background: #f0ede8;
+}
+
+.BackButton {
+  position: absolute;
+  top: 12vh;
+  left: 10vw;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+}
+
+.BackButton:active,
+.BackButton:hover {
+  cursor: pointer;
+  color: #000;
+  background: #f4f5f7;
+}
