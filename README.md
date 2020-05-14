@@ -4,7 +4,7 @@
 Made with ❤ in one week-end.
 
 ### App demo on Netlify to check out:  
-[https://5ea5df1e03d6d45674082a99--peaceful-mayer-4adbaf.netlify.app](https://5ea5df1e03d6d45674082a99--peaceful-mayer-4adbaf.netlify.app)
+[https://reactivia.netlify.app](https://reactivia.netlify.app)
 I must warn you, even easy questions can be pretty hard :)
 
 
