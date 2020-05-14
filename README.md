@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+﻿# Reactivia - A Trivia App
+## By Tarık Köprülü
 
-## Available Scripts
+This App was made in a weekend by me with <3
 
-In the project directory, you can run:
+### App demo on Netlify to check out:  
+[https://5ea5df1e03d6d45674082a99--peaceful-mayer-4adbaf.netlify.app](https://5ea5df1e03d6d45674082a99--peaceful-mayer-4adbaf.netlify.app)
 
-### `yarn start`
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Libraries I used:
+- **axios** for better error handling, manipulating requests and responses better way via interceptors.
+- **he** for decoding html entities coming from response strings back to human language.
+- **react-lottie**  for sweet and easily implemented animations.
+- **redux** for easy-to-maintain and predictable state management inside the app.
+- **react-router-dom** for routing, redirecting and changing browser's url in a single page application and render corresponding components based on url (SPA).
+- **react-slick** for mobile friendly and responsive carousel component.
+- **redux-thunk** for making asynchronous redux actions possible.
+- **semantic-ui-react** for beautifully made ready-to-use components like full page loading screens, buttons etc. (Only used it for Loading Screen).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Some features of App
+- Category selection from over 20 categories
+- Hardness selection
+- Responsive
+- Used OpenTriviaDB to power up this App
+- Routing in SPA
+- Changing point and grade system
+- Timer
+- One-time only hint system that eliminates two random wrong answers
 
-### `yarn test`
+### Things I learned while doing this project
+- Usage of Lottie. It was very similar to **flutter_flare** package which I used before.
+- Usage and realizing the existence of Netlify. This service makes it so easy to deploy apps.
+- he package for decoding html entities.
+- Optimizing images for lesser sizes with about same quality.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Things to Improve
+- Maybe code splitting with React.lazy and Suspense?
+- axios interceptors for better handling of errors related of API and network
+- PropTypes for type-safety
+- Proper error page for cases like no connection.
+- Better routing for quizzes(not sure about that).
+- Single timer variable for preventing one unwanted tick after quiz is finished/failed before the timer runs out of time.
+- Token system for not seeing same questions? (Theres not much questions, so I skipped it but API Provides this feature)

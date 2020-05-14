@@ -1,4 +1,0 @@
-- Better routing
-- Better error handling
-- Token system for not seeing same questions? (Theres not much questions, so I skipped it but API Provides this feature)
-- Could carry timer into store to prevent unwanted time ticks
